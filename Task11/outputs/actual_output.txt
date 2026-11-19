@@ -1,0 +1,3 @@
+fare=1000 accepted=true balance=9000
+fare=2000 accepted=true balance=7000
+fare=3000 accepted=false balance=7000
