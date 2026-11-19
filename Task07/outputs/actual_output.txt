@@ -1,0 +1,2 @@
+Procedural denied
+OOP denied balance=10000
