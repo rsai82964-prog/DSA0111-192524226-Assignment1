@@ -1,0 +1,7 @@
+PREDICTION WRITTEN BEFORE EXECUTION
+2 3.5
+C 68
+1 true
+s >= u
+
+Reasoning: a/b performs integer division first; casting a to double makes the second division floating-point. ch is C; ch+1 promotes char to int (67+1=68). bool prints as 1, then true after boolalpha. Comparing signed -1 with unsigned 1 converts -1 to a large unsigned value, so s >= u is selected.
