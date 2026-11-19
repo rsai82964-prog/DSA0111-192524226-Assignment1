@@ -1,0 +1,8 @@
+ALGORITHM FareForJourney(zone, hour)
+INPUT: zone in {Inner, Middle, Outer}, hour from 0 through 23
+IF hour is in [8,10) OR [17,20), peak <- true; otherwise false
+SWITCH zone: Inner base <- 1000; Middle base <- 2000; Outer base <- 3000; invalid zone: report error and stop
+IF peak THEN fare <- base + base * 20 / 100 ELSE fare <- base
+RETURN fare in integer paise
+ALGORITHM CanTravel(balance, fare)
+RETURN balance - fare >= 5000
