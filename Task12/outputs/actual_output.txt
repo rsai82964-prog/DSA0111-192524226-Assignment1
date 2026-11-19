@@ -1,0 +1,4 @@
+fare_paise=0 accepted=true balance_paise=20000
+fare_paise=2700 accepted=true balance_paise=17300
+fare_paise=2400 accepted=true balance_paise=14900
+fare_paise=0 accepted=true balance_paise=14900
