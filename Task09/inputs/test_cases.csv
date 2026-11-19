@@ -1,0 +1,10 @@
+name,zone,hour,balance_paise,expected_fare_paise,expected_allowed
+Inner offpeak,1,11,10000,1000,true
+Middle peak,2,9,10000,2400,true
+Outer at 8,3,8,10000,3600,true
+Outer at 10,3,10,10000,3000,true
+Outer at 17,3,17,10000,3600,true
+Outer at 20,3,20,10000,3000,true
+exact Rs50 remainder,1,12,6000,1000,true
+low balance,3,12,7000,3000,false
+unknown zone,9,12,10000,0,false

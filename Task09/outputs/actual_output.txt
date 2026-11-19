@@ -1,0 +1,11 @@
+Inner offpeak | fare=1000 expected=1000 | allowed=1 | PASS
+Middle peak | fare=2400 expected=2400 | allowed=1 | PASS
+Outer at 8 | fare=3600 expected=3600 | allowed=1 | PASS
+Outer at 10 | fare=3000 expected=3000 | allowed=1 | PASS
+Outer at 17 | fare=3600 expected=3600 | allowed=1 | PASS
+Outer at 20 | fare=3000 expected=3000 | allowed=1 | PASS
+exact Rs50 remainder | fare=1000 expected=1000 | allowed=1 | PASS
+low balance | fare=3000 expected=3000 | allowed=0 | PASS
+unknown zone | fare=0 expected=0 | allowed=0 | PASS
+Passed 9/9 fare tests
+negative recharge rejected | PASS

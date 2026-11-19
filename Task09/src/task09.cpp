@@ -1,0 +1,6 @@
+#include <iostream>
+#include <string>
+struct Case{std::string name;int zone;int hour;long long balance;long long expectedFare;bool expectedAllowed;};
+bool isPeak(int h){return (h>=8&&h<10)||(h>=17&&h<20);} long long fare(int z,int h){long long b=z==1?1000:z==2?2000:z==3?3000:0;return isPeak(h)?b*120/100:b;}
+bool validRecharge(long long amount){return amount>=0;}
+int main(){Case tests[]={ {"Inner offpeak",1,11,10000,1000,true},{"Middle peak",2,9,10000,2400,true},{"Outer at 8",3,8,10000,3600,true},{"Outer at 10",3,10,10000,3000,true},{"Outer at 17",3,17,10000,3600,true},{"Outer at 20",3,20,10000,3000,true},{"exact Rs50 remainder",1,12,6000,1000,true},{"low balance",3,12,7000,3000,false},{"unknown zone",9,12,10000,0,false}}; int pass=0; for(const auto&t:tests){long long f=fare(t.zone,t.hour);bool valid=t.zone>=1&&t.zone<=3;bool allowed=valid&&t.balance-f>=5000;bool ok=valid?(f==t.expectedFare&&allowed==t.expectedAllowed):!allowed;std::cout<<t.name<<" | fare="<<f<<" expected="<<t.expectedFare<<" | allowed="<<allowed<<" | "<<(ok?"PASS":"FAIL")<<'\n';pass+=ok;}std::cout<<"Passed "<<pass<<"/"<<(sizeof(tests)/sizeof(tests[0]))<<" fare tests\n"; bool rechargeOk=!validRecharge(-100); std::cout<<"negative recharge rejected | "<<(rechargeOk?"PASS":"FAIL")<<'\n';}

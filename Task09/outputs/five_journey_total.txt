@@ -1,0 +1,7 @@
+Hand-calculated five-journey example (all values in rupees):
+1. Inner off-peak = Rs 10
+2. Middle peak = Rs 24
+3. Outer off-peak = Rs 30
+4. Outer peak = Rs 36
+5. Middle off-peak = Rs 20
+Total = 10 + 24 + 30 + 36 + 20 = Rs 120
