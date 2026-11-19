@@ -1,0 +1,5 @@
+20000 journeys: exact paise=72000000 exact rupees=720000 double rupees=720000.00 int_max=2147483647
+500000 journeys: exact paise=1800000000 exact rupees=18000000 double rupees=18000000.00 int_max=2147483647
+3000000 journeys: exact paise=10800000000 exact rupees=108000000 double rupees=108000000.00 int_max=2147483647
+Network total paise=10800000000 fits int=false
+Repeated 0.10 double=100000.00000133288267534 integer-paise rupees=100000.00000000000000000
