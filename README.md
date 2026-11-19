@@ -1,7 +1,7 @@
 # DSA01-RegisterNumber-Assignment1
 
-**Student name:** [Enter your full name]  
-**Register number:** [Enter your register number]  
+**Student name:** P Rahul Sai 
+**Register number:** 192524226  
 **Assignment:** CO1 — Design, Implement and Validate the Fare Logic of a City Metro Smart-Card System  
 **Compiler:** GNU g++ 14.2.0 (Debian 14.2.0-19)  
 **Language standard:** C++17
