@@ -1,0 +1,1 @@
+Card CARD001 fare_paise=3600 balance_paise=6400
